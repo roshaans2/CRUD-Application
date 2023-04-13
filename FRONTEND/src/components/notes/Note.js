@@ -14,7 +14,7 @@ const Note = ({}) => {
 
   const getNote = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/notes/${id}`, {
+      const response = await axios.get(`https://react-crud-k821.onrender.com/notes/${id}`, {
         headers: {
           auth: token,
         },
