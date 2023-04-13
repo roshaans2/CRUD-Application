@@ -32,7 +32,7 @@ function Signup() {
         try {
             e.preventDefault()
             console.log({ firstName, lastName })
-            const response = await axios.post("http://localhost:8080/auth/register", { firstName, lastName, email, password, username })
+            const response = await axios.post("https://react-crud-k821.onrender.com/auth/register", { firstName, lastName, email, password, username })
             console.log(response)
             const { data: { success, message } } = response;
             if (success) {
