@@ -20,7 +20,7 @@ const DeleteNote = ({}) => {
     const handleSubmit = async () => {
 
        try {
-        const response = await axios.delete(`http://localhost:8080/notes/delete/${id}`,{
+        const response = await axios.delete(`https://react-crud-k821.onrender.com/notes/delete/${id}`,{
           headers:{
             auth:token
           }
