@@ -35,7 +35,7 @@ const AddNote = () => {
         try {
             e.preventDefault();
       
-            const response = await axios.post("http://localhost:8080/notes/add", {
+            const response = await axios.post("https://react-crud-k821.onrender.com/notes/add", {
               title,
               content:editor.current.value,
               color,
