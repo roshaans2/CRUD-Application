@@ -18,7 +18,7 @@ const Notes = (props) => {
   }, [token]);
   const getUserNotes = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/notes", {
+      const response = await axios.get("https://react-crud-k821.onrender.com/notes", {
         headers: {
             auth:token
         }
