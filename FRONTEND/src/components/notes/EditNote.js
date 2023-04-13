@@ -16,7 +16,7 @@ const EditNote = ({}) => {
 
   const getNote = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/notes/${id}`, {
+      const response = await axios.get(`https://react-crud-k821.onrender.com/notes/${id}`, {
         headers: {
           auth: token,
         },
@@ -51,7 +51,7 @@ const EditNote = ({}) => {
      try {
       e.preventDefault();
 
-      const response = await axios.put(`http://localhost:8080/notes/${id}`, {
+      const response = await axios.put(`https://react-crud-k821.onrender.com/notes/${id}`, {
         title,
         content:editor.current.value,
         color
