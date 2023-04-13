@@ -26,7 +26,7 @@ function Login() {
         try {
             e.preventDefault();
 
-            const response = await axios.post("http://localhost:8080/auth/login", {
+            const response = await axios.post("https://react-crud-k821.onrender.com/auth/login", {
                 email,
                 password,
             });
